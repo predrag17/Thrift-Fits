@@ -1,0 +1,10 @@
+.header h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (max-width: 770px) {
+    .styled-container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,13 @@
+@media screen and (max-width: 1000px) {
+    .row .col-md-3 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .row .col-md-3 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
