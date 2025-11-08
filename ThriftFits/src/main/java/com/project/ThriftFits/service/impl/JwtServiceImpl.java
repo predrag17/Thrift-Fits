@@ -19,10 +19,13 @@ import java.util.function.Function;
 @Service
 public class JwtServiceImpl implements JwtService {
 
-    @Value("${JWT_SECRET_KEY}")
     private final String jwtSecretKey;
 
     private static final long EXPIRATION_TIME = 24 * 60 * 60 * 1000;
+
+    public JwtServiceImpl(@Value("${JWT_SECRET_KEY}") String jwtSecretKey) {
+        this.jwtSecretKey = jwtSecretKey;
+    }
 
     @Override
     public String extractUsername(String jwtToken) {

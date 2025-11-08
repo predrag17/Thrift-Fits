@@ -10,8 +10,7 @@ import java.io.IOException;
 
 @RequiredArgsConstructor
 @RestController
-@CrossOrigin(origins = {"http://localhost:3000",
-        "http://thrift-fits-app.s3-website.eu-central-1.amazonaws.com/"})
+@CrossOrigin(origins = {"http://localhost:3000"})
 @RequestMapping("/api/img")
 public class ImageController {
 
